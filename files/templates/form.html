@@ -1,0 +1,10 @@
+<form method="POST">{% csrf_token %}
+    <label for="n1">User:</label>
+    <input name="username" type="text" id="n1" placeholder="Enter Name">
+    <button type="submit">Submit</button>
+</form>
+{% if res %}
+<h2>User exists</h2>
+{% else %}
+<h2>User does not exists</h2>
+{% endif %}
